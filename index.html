@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1>Create note</h1>
+        <form>
+            <input id="title" type="text" placeholder="Title">
+            <input id="body" type="text" placeholder="Description">
+            <button type="submit">Add note</button>
+        </form>
+        <br>
+        <input id="search" type="text" placeholder="Search">
+        <button id="showImportant">Show important notes</button>
+        <div id="container-notes"></div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
